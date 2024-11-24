@@ -7,6 +7,8 @@ const isAuthenticated = require('../middleware/authenticate');
 routes.use('/', require('./swagger'));
 routes.use('/movies', require('./movies'));
 routes.use('/movie_genders', require('./movie_genders'));
+routes.use('/directors', require('./directors'));
+routes.use('/users', require('./users'));
 
 // Home route: checks if user is logged in
 routes.get('/', (req, res) => {
