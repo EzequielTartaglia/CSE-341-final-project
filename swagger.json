@@ -402,6 +402,9 @@
             "schema": {
               "type": "object",
               "properties": {
+                "director_id": {
+                  "example": "any"
+                },
                 "first_name": {
                   "example": "any"
                 },
@@ -466,6 +469,9 @@
             "schema": {
               "type": "object",
               "properties": {
+                "director_id": {
+                  "example": "any"
+                },
                 "first_name": {
                   "example": "any"
                 },
