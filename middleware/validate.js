@@ -69,8 +69,32 @@ const saveDirector = (req, res, next) => {
   });
 };
 
+const saveUser = (req, res, next) => {
+  const isUpdate = req.method === "PUT";
+
+  const validationRule = {
+    user_id: isUpdate ? "integer" : "required|integer",
+    first_name: isUpdate ? "string" : "required|string",
+    last_name: isUpdate ? "string" : "required|string",
+    email: isUpdate ? "string" : "required|string",
+  };
+
+  validator(req.body, validationRule, {}, (err, status) => {
+    if (!status) {
+      res.status(412).send({
+        success: false,
+        message: "Validation failed",
+        data: err,
+      });
+    } else {
+      next();
+    }
+  });
+};
+
 module.exports = {
   saveMovie,
   saveMovieGender,
-  saveDirector
+  saveDirector,
+  saveUser
 };
