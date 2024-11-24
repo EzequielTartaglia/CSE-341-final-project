@@ -13,7 +13,7 @@ GET http://localhost:8080/movies/67342ee5133ef0f9ffac4129
 ### Get movie gender by id
 GET http://localhost:8080/movie_genders/673377343dedfd839ef7861c
 ### Get director by id
-GET http://localhost:8080/directors/673377343dedfd839ef7861c
+GET http://localhost:8080/directors/674290c28540c7cbaeb7046f
 ### Get user by id
 GET http://localhost:8080/users/673377343dedfd839ef7861c
 
@@ -36,7 +36,7 @@ content-type: application/json
 {
     "movie_gender_id":5,
     "name":"Comedy",
-    "description":"Movies designed to entertain and amuse with humor.",
+    "description":"Movies designed to entertain and amuse with humor."
 }
 
 ### Create director
@@ -45,8 +45,8 @@ content-type: application/json
 
 {
     "director_id":5,
-    "fist_name":"Steven",
-    "last_name":"Speelbert",
+    "first_name":"Steven",
+    "last_name":"Speelbert"
 }
 ### Create user
 POST http://localhost:8080/users HTTP/1.1
@@ -54,9 +54,9 @@ content-type: application/json
 
 {
     "user_id":5,
-    "fist_name":"Steven",
+    "first_name":"Steven",
     "last_name":"Speelbert",
-    "email":"ss@example.com",
+    "email":"ss@example.com"
 }
 
 
@@ -79,16 +79,16 @@ content-type: application/json
 {
     "movie_gender_id":5,
     "name":"Comedy",
-    "description":"Movies designed to entertain and amuse with humor.",
+    "description":"Movies designed to entertain and amuse with humor."
 }
 ### PUT director
-PUT http://localhost:8080/directors/673377343dedfd839ef7861c HTTP/1.1
+PUT http://localhost:8080/directors/674290c28540c7cbaeb7046f HTTP/1.1
 content-type: application/json
 
 {
     "director_id":5,
-    "fist_name":"Steven",
-    "last_name":"Speelvert",
+    "first_name":"Steven",
+    "last_name":"Speelvert"
 }
 ### PUT user
 PUT http://localhost:8080/users/673377343dedfd839ef7861c HTTP/1.1
@@ -96,9 +96,9 @@ content-type: application/json
 
 {
     "user_id":5,
-    "fist_name":"Steven",
+    "first_name":"Steven",
     "last_name":"Speelbert",
-    "email":"ss@example.org",
+    "email":"ss@example.org"
 }
 
 ### DELETE movie
@@ -125,7 +125,7 @@ GET https://cse-341-final-project-35w8.onrender.com/movies/67342ee5133ef0f9ffac4
 ### Get movie gender by id
 GET https://cse-341-final-project-35w8.onrender.com/movie_genders/673377343dedfd839ef7861c
 ### Get director by id
-GET https://cse-341-final-project-35w8.onrender.com/directors/673377343dedfd839ef7861c
+GET https://cse-341-final-project-35w8.onrender.com/directors/674290c28540c7cbaeb7046f
 ### Get user by id
 GET https://cse-341-final-project-35w8.onrender.com/users/673377343dedfd839ef7861c
 
@@ -148,7 +148,7 @@ content-type: application/json
 {
     "movie_gender_id":5,
     "name":"Comedy",
-    "description":"Movies designed to entertain and amuse with humor.",
+    "description":"Movies designed to entertain and amuse with humor."
 }
 ### Create director
 POST https://cse-341-final-project-35w8.onrender.com/directors HTTP/1.1
@@ -156,18 +156,19 @@ content-type: application/json
 
 {
     "director_id":5,
-    "fist_name":"Steven",
-    "last_name":"Speelbert",
+    "first_name":"Steven",
+    "last_name":"Speelbert"
 }
+
 ### Create user
 POST https://cse-341-final-project-35w8.onrender.com/users HTTP/1.1
 content-type: application/json
 
 {
     "user_id":5,
-    "fist_name":"Steven",
+    "first_name":"Steven",
     "last_name":"Speelbert",
-    "email":"ss@example.com",
+    "email":"ss@example.com"
 }
 
 ### PUT movie
@@ -189,25 +190,25 @@ content-type: application/json
 {
     "movie_gender_id":5,
     "name":"Comedy",
-    "description":"Movies designed to entertain and amuse with humor.",
+    "description":"Movies designed to entertain and amuse with humor."
 }
 ### PUT director
-PUT https://cse-341-final-project-35w8.onrender.com/directors/673377343dedfd839ef7861c HTTP/1.1
+PUT https://cse-341-final-project-35w8.onrender.com/directors/674290c28540c7cbaeb7046f HTTP/1.1
 content-type: application/json
 
 {
     "director_id":5,
-    "fist_name":"Steven",
-    "last_name":"Speelvert",
+    "first_name":"Steven",
+    "last_name":"Speelvert"
 }
 ### PUT user
 PUT https://cse-341-final-project-35w8.onrender.com/users/673377343dedfd839ef7861c HTTP/1.1
 content-type: application/json
 {
     "user_id":5,
-    "fist_name":"Steven",
+    "first_name":"Steven",
     "last_name":"Speelbert",
-    "email":"ss@example.org",
+    "email":"ss@example.org"
 }
 
 
