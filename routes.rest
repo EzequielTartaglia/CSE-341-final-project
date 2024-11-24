@@ -1,0 +1,120 @@
+// LOCALHOST
+### Get all movies
+GET http://localhost:8080/movies
+### Get all movie genders
+GET http://localhost:8080/movie_genders
+
+### Get movie by id
+GET http://localhost:8080/movies/67342ee5133ef0f9ffac4129
+### Get movie gender by id
+GET http://localhost:8080/movie_genders/673377343dedfd839ef7861c
+
+### Create movie
+POST http://localhost:8080/movies HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Pulp Fiction",
+    "description":"The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+    "release_date":"1994-10-14T00:00:00.000Z",
+    "movie_gender_id":4,
+    "director_id":4,
+    "total_minutes": 154
+}
+### Create movie gender
+POST http://localhost:8080/movie_gender HTTP/1.1
+content-type: application/json
+
+{
+    "movie_gender_id":5,
+    "name":"Comedy",
+    "description":"Movies designed to entertain and amuse with humor.",
+}
+
+### PUT movie
+PUT http://localhost:8080/movies/67342ee5133ef0f9ffac4129 HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Pulp Fiction",
+    "description":"The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+    "release_date":"1994-10-14T00:00:00.000Z",
+    "movie_gender_id":4,
+    "director_id":4,
+    "total_minutes": 156
+}
+### PUT movie gender
+PUT http://localhost:8080/movie_genders/673377343dedfd839ef7861c HTTP/1.1
+content-type: application/json
+
+{
+    "movie_gender_id":5,
+    "name":"Comedy",
+    "description":"Movies designed to entertain and amuse with humor.",
+}
+
+### DELETE movie
+DELETE http://localhost:8080/movies/67342ee5133ef0f9ffac4129 HTTP/1.1
+### DELETE movie gender
+DELETE http://localhost:8080/movie_genders/673377343dedfd839ef7861c HTTP/1.1
+
+// PRODUCTION Deploy
+### Get all contacts
+GET https://cse-341-project2-obur.onrender.com/movies
+### Get all movie genders
+GET https://cse-341-project2-obur.onrender.com/movie_genders
+
+### Get movie by id
+GET https://cse-341-project2-obur.onrender.com/movies/67342ee5133ef0f9ffac4129
+### Get movie gender by id
+GET https://cse-341-project2-obur.onrender.com/movie_genders/673377343dedfd839ef7861c
+
+### Create movie
+POST https://cse-341-project2-obur.onrender.com/movies HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Pulp Fiction",
+    "description":"The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+    "release_date":"1994-10-14T00:00:00.000Z",
+    "movie_gender_id":4,
+    "director_id":4,
+    "total_minutes": 154
+}
+### Create movie gender
+POST  https://cse-341-project2-obur.onrender.com/movie_gender HTTP/1.1
+content-type: application/json
+
+{
+    "movie_gender_id":5,
+    "name":"Comedy",
+    "description":"Movies designed to entertain and amuse with humor.",
+}
+
+
+### PUT movie
+PUT https://cse-341-project2-obur.onrender.com/movies/67342ee5133ef0f9ffac4129 HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Pulp Fiction",
+    "description":"The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+    "release_date":"1994-10-14T00:00:00.000Z",
+    "movie_gender_id":4,
+    "director_id":4,
+    "total_minutes": 156
+}
+### PUT movie gender
+PUT https://cse-341-project2-obur.onrender.com/movie_genders/673377343dedfd839ef7861c HTTP/1.1
+content-type: application/json
+
+{
+    "movie_gender_id":5,
+    "name":"Comedy",
+    "description":"Movies designed to entertain and amuse with humor.",
+}
+
+### DELETE movie
+DELETE https://cse-341-project2-obur.onrender.com/movies/67342ee5133ef0f9ffac4129 HTTP/1.1
+### DELETE movie gender
+DELETE https://cse-341-project2-obur.onrender.com/movie_genders/673377343dedfd839ef7861c HTTP/1.1
