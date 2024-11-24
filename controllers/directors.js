@@ -37,6 +37,7 @@ const getSingle = (req, res) => {
 
 const createDirector = async (req, res) => {
   const director = {
+    director_id: req.body.director_id,
     first_name: req.body.first_name,
     last_name: req.body.last_name,
   };
@@ -55,6 +56,7 @@ const updateDirector = (req, res) => {
   const directorId = new ObjectId(req.params.id);
 
   const updateData = {
+    director_id: req.body.director_id,
     first_name: req.body.first_name,
     last_name: req.body.last_name
   };
